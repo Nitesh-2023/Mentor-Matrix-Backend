@@ -19,12 +19,10 @@ const PORT = 5000;
 //default middleware
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors(
-//     {
-//     origin:"https://mentor-lms.netlify.app",
-//     credentials:true
-// }
-));
+app.use(cors({
+    origin:"mentor-lms.netlify.app",
+    credentials:true
+}));
 
 //apis
 app.use("/api/v1/media", mediaRoute);
