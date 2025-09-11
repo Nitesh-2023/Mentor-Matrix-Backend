@@ -20,7 +20,7 @@ const PORT = 5000;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin:"https://mentor-lms.netlify.app/",
+    origin:"https://mentor-lms.netlify.app",
     credentials:true
 }));
 
